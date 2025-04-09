@@ -1,1 +1,14 @@
 오늘 집가서 채워넣으세요!
+
+04.07 수업내용 정리
+1. 개발환경 구성
+  가. github사용관련사항
+    1) gitbush에서 환경설정 
+      *gitbush는 github를 보다 효과적으로 사용하기 위해 관련사항을 설정하는 CMD형태의 프로그램
+      -자주사용하는 gitbush 명령어와 예시
+       *git init : 현재 폴더를 git저장소로 초기화
+       *git add. : 공유 추가할 파일 더할 준비 예령을검
+                     (git add.는 현재 폴더 전체, git add +파일명 은 파일명 특정폴더)
+       *git commit -m"메세지" : 스테이지에 올라간 내용을 하나의 이력으로 저장
+
+git pull origin main : 커밋된 git를 컴퓨터로 끌어옴.
