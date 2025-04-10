@@ -12,3 +12,9 @@
        *git commit -m"메세지" : 스테이지에 올라간 내용을 하나의 이력으로 저장
 
 git pull origin main : 커밋된 git를 컴퓨터로 끌어옴.
+
+git 사용법 정리(올리는법)
+-git status
+-git add .
+-git commit -m "0408 내용 최신화"
+-git push
