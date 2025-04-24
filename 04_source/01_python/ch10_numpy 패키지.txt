@@ -1,0 +1,37 @@
+numpy 패키지 함수와 속성
+-배열속성
+  dtype : 요소의 type / 배열 요소의 자료형 (예: int32, float64)
+  itemsize : 한 요소의 bytesize / 한 요소의 메모리 크기(바이트). 예: int32 → 4 bytes
+  ndim : 차원수(축수) / 배열의 차원 수(축 수). 1차원, 2차원, 3차원...
+  size : 배열 요소 갯수 / 배열에 포함된 전체 요소의 개수
+  shape : 배열 구조 변환에 사용됨.(튜플) / 배열의 구조 (튜플 형태, 예: (3, 5)), 차원 변경 시 사용
+
+-배열 생성 함수 *표시=강사님 강조
+ np.array(obj, dtype, copy=T)
+ np.array(obj, dtype, copy=T).reshape(구조)
+ *np.ones(tup, dtype)
+ *np.zeros(tup, dtype)
+ np.full(tup, dtype)
+ np.empty(tup, dtype)
+ *np.random.random(tup) : 0~1미만 균등분포를 갖는 난수배열
+ np.random.uniform(low=0, high-1.0, tup) : low~high미만 균등분포를 갖는 난수 배열
+ np.random.normal(loc=0, scale=1.0, size=tup) : 평균loc, 표준편차scale의 정규분포를 갖는 난수 배열
+ np.random.rand(n) : 균등분포의 1차원 난수배열(난수갯수 n개)
+ np.random.randn(n) : 표준정규분포의 1차원 난수 배열(난수갯수 n개)
+ np.linspace(from, to, count, dtype) : from부터 to까지 count개 1차원 배열
+ np.arange(from, stop, step) : from부터 stop앞까지 step 증감하는 1차월 배열
+            start 부터 stop 전까지 step 간격으로 숫자를 생성하는 함수
+	예: np.arange(0, 10, 2) → [0, 2, 4, 6, 8]
+
+-배열 차원 변경
+ reshape() : 배열의 형태(shape)를 바꾸는 함수
+	new_shape은 튜플 형태로 전달 ((행, 열))
+	원소 개수는 같아야 변경 가능
+	예: a.reshape(3, 5) → 총 15개의 요소가 있어야 가능
+
+ ravel(), flatten() : 1차원 변경
+
+-저장
+배열저장 : pkl ,npy
+딥러닝모델저장 : h5(win10에서 GPU사용 시), keras
+머신러닝 모델 저장 : pkl, joblib
