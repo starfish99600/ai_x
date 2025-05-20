@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <style>
+    #compareForm {
+      text-align: center;
+      border: 1px solid gray;
+      width: 600px;
+      padding: 30px;
+      margin: 0 auto;
+      margin-top: 30px;
+    }
+    #title {
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <h3 id="title">숫자 비교</h3>
+  <form id="compareForm">
+    첫 번째 수: <input type="text" id="num1"><br>
+    두 번째 수: <input type="text" id="num2"><br><br>
+    <button type="button" onclick="compare()">결과</button>
+  </form>
+
+  <script>
+    function compare() {
+      var n1 = document.getElementById('num1').value;
+      var n2 = document.getElementById('num2').value;
+      var num1 = Number(n1);
+      var num2 = Number(n2);
+      if (n1 === "" || n2 === "") {
+        alert("두 수를 모두 입력해주세요.");
+        return;}
+      if (isNaN(num1) || isNaN(num2)) {
+        alert("숫자만 입력해주세요.");
+        return;}
+      if (num1 > num2) {
+        alert("첫 번째 수가 더 큽니다.");
+      } else if (num1 < num2) {
+        alert("두 번째 수가 더 큽니다.");
+      } else {
+        alert("두 수가 같습니다.");
+      }
+    }
+  </script>
+</body>
+</html>

@@ -45,7 +45,7 @@ header .gnb {
             text-align: center;
             line-height: 30px;
             /*border:1px solid yellow;
-  box-sizing:border-box;*/ /*확인용*/
+            box-sizing:border-box;*/ /*확인용*/
         }
 
     header .gnb a {
