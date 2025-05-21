@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz - 배경 바꾸기</title>
+  <style>
+    body {
+      background-size: 100%;
+      color: yellow;
+      font-size: 2rem;
+      text-align: center;
+      margin-top: 100px;
+    }
+  </style>
+</head>
+<body>
+  <script>
+    const images = [
+      'ch05_img/img01.png',
+      'ch05_img/img02.png',
+      'ch05_img/img03.png'
+    ];
+
+    let count = 0;
+
+    const intervalId = setInterval(() => {
+      const now = new Date();
+      document.body.style.backgroundImage = `url(${images[count % images.length]})`;
+
+      document.body.innerHTML = `
+        <div>${now.toString()}</div>
+        <div>${count + 1}초 지남</div>
+      `;
+
+      count++;
+
+      if (count >= 10) {
+        clearInterval(intervalId);
+      }
+    }, 1000);
+  </script>
+</body>
+</html>

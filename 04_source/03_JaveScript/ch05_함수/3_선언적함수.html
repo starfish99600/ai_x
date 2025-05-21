@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0" />
+    <title></title>
+    <style>
+        
+    </style>
+    <script>
+        fun() // 선언적함수는 정의가 이뤄지기 전, 위에서도 호출이 가능함.(원래는 위에서 정의하고 아래에서 호출해야 정상적으로 호출됨.)
+        function fun(){ // 선언적 함수
+            document.write('함수 fun <br>');
+        }
+        fun()
+        //선언적 함수의 재정의 : 맨 마지막에 정의된 함수가 유효함, 그 전에 정의된 함수는 유효하지 않음.
+        function fun(){
+            document.write('수정된 함수 <br>');
+        }
+        fun()
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title>누적 점수 퀴즈</title>
+</head>
+<body>
+    <script>
+        let cnt = 0;        // 누적 입력 횟수
+        let right = 0;      // 유효한 점수 입력 횟수
+        let wrong = 0;      // 유효하지 않은 점수 입력 횟수
+        let sum = 0;        // 점수 누적 합계
+        while (confirm("누적할래?")) {
+            let input = prompt("누적할 점수?"); // 입력
+            if (input === null) break; // 취소 누르면 종료
+            let score = Number(input);
+            cnt++; // 총 입력 횟수 증가
+            if (!isNaN(score) && score >= 0 && score <= 100) {
+                sum += score; // 점수 누적
+                right++;      // 올바른 입력
+            } else {
+                wrong++;      // 잘못된 입력
+            }
+        }
+        // 결과 출력
+        document.write('<h3>' + cnt + '번 입력</h3>');
+        document.write('누적점수 : ' + sum.toFixed(1) + '<br>'); // 소수점 1자리
+        document.write('점수를 제대로 입력한 횟수 : ' + right + '<br>');
+        document.write('점수를 잘못 입력한 횟수 : ' + wrong + '<br>');
+    </script>
+</body>
+</html>
+
