@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <meta charset="UTF-8" />
+  <style>
+    table {width: 500px; margin: 10px auto; background-color: darkgreen; border-collapse: collapse;}
+    td {background-color: white; padding: 50px; text-align: center; border: 1px solid green;}
+  </style>
+  <script>
+    window.onload = function () {
+      const tds = document.getElementsByTagName('td'); // td들을 모두 가져옴
+
+      window.onkeyup = function (event) {
+        const key = event.keyCode;
+
+        // 모든 칸의 배경색을 white로 초기화
+        for (let i = 0; i < tds.length; i++) {tds[i].style.backgroundColor = 'white';}
+
+        // 윗 숫자 키보드 (48~57 → 0~9)
+        if (key >= 48 && key <= 57) {
+          const index = key - 48;
+          if (index >= 0 && index < tds.length) {
+            tds[index].style.backgroundColor = 'yellow';}}
+        // 옆 숫자 키패드 (96~105 → 0~9)
+        else if (key >= 96 && key <= 105) {
+          const index = key - 96;
+          if (index >= 0 && index < tds.length) {
+            tds[index].style.backgroundColor = 'red';}
+        }
+      };
+    };
+  </script>
+</head>
+<body>
+  <table>
+    <tr><td>0</td><td>1</td><td>2</td></tr>
+    <tr><td>3</td><td>4</td><td>5</td></tr>
+    <tr><td>6</td><td>7</td><td>8</td></tr>
+  </table>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Quiz3 - 마우스 다운/업 이미지 변경</title>
+</head>
+<body>
+  <!-- 아이콘 이미지 -->
+  <img id="button" src="img/but1.gif" alt="mouse up" />
+
+  <script>
+    // 이벤트 설정 대상 요소 가져오기
+    const btn = document.getElementById('button');
+
+    // 마우스를 누르면 down 이미지로
+    btn.onmousedown = function () {
+      this.src = 'img/but2.gif'; // 눌린 상태 이미지
+    };
+
+    // 마우스를 떼면 다시 up 이미지로
+    btn.onmouseup = function () {
+      this.src = 'img/but1.gif'; // 원래 상태 이미지
+    };
+  </script>
+</body>
+</html>
