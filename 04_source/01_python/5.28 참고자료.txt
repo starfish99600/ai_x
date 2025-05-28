@@ -1,0 +1,19 @@
+status => div.head_info > span.blind
+unit => div.head_info > span > span.blind
+price => div.head_info > span.value
+title => h3.h_lst > span.blind
+
+
+
+1173회(times) : div.win_result > h4 > strong
+날짜(date) : div.win_result >p.desc
+당첨번호 글씨(title1) : div.num.win > strong
+lotto_numbers : div.num.win > p > span
+보너스글씨(title2) : div.num.bonus > strong
+bonus_number : div.num.bonus > p > span
+
+div.item-title > strong.tit-g > a
+
+title_element => div.ellipsis.rank01 > span
+singer_element => div.ellipsis.rank02 > span.checkEllipsis
+likes_element => div.wrap > button > span.cnt에서 총건수(span.none)제외
