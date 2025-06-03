@@ -229,3 +229,4 @@ SELECT EMPNO, ENAME, SAL * 12 AS 연봉
 FROM EMP 
 WHERE SAL * 12 >= 35000;
 
+select * form emp;
