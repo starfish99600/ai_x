@@ -1,5 +1,3 @@
-<img width="628" height="893" alt="Image" src="https://github.com/user-attachments/assets/c58e6d76-4a08-47c7-b326-bba39ef28ff0" />
-
 # 📘 [KDT] 기업맞춤형 AI+X 융복합 인재 양성 학습일지
 
 > **이 저장소는 KDT 프로그램(기업맞춤형 디지털 인재 양성 사업)의 학습 내용을 정리한 공간입니다.**  
@@ -37,7 +35,7 @@
 - ✅ Flask, Django, FastAPI 기반 웹 프로젝트
 - ✅ DBMS (Oracle, MySQL) 실습
 - ✅ 머신러닝, 딥러닝, 자연어처리 프로젝트 수행
-
+<img width="628" height="893" alt="Image" src="https://github.com/user-attachments/assets/c58e6d76-4a08-47c7-b326-bba39ef28ff0" />
 ---
 
 ## 🙋‍♀️ 기타
