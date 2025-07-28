@@ -35,6 +35,8 @@
 - ✅ Flask, Django, FastAPI 기반 웹 프로젝트
 - ✅ DBMS (Oracle, MySQL) 실습
 - ✅ 머신러닝, 딥러닝, 자연어처리 프로젝트 수행
+- ✅ 1st Project
+<img width="1489" height="365" alt="FlowCastlong" src="https://github.com/user-attachments/assets/26bff312-950e-44a3-b7d3-9d739392947b" />
 <img width="628" height="893" alt="Image" src="https://github.com/user-attachments/assets/c58e6d76-4a08-47c7-b326-bba39ef28ff0" />
 ---
 
